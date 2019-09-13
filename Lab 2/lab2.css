@@ -2,7 +2,7 @@
 	text-align: center;
 	color: grey;
 	border: 2px solid grey;
-	background-color:  rgb(0,200,200);
+	background-color:  lightblue/*rgb(0,200,200)*/;
 }
 
 a:hover {
@@ -10,9 +10,17 @@ a:hover {
 	border: 1px solid black;
 }
 
+a:visited {
+	color: red;
+}
+
 a {
 	color: blue;
 	text-decoration: none;
+}
+
+tr:hover {
+	background-color: lightgrey;
 }
 
 #summary {
