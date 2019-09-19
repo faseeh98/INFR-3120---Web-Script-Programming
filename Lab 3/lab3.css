@@ -17,14 +17,16 @@ nav > a {
 	color: white;
 }
 
+footer {
+	padding-top: 3%;
+	padding-bottom: 3%;
+	text-align: center;
+	background-color: lightgrey;
+}
+
 a:hover {
 	background-color: rgb(220, 220, 220);
 	border: 1px solid black;
-}
-
-
-a:link {
-	color: blue;
 }
 
 a {
@@ -36,14 +38,37 @@ tr:hover {
 	background-color: lightgrey;
 }
 
-#summary {
+#contacts {
 	display: inline-block;
 	text-align: center;
+	margin: 2%;
+	float: left;
+	width: 50%;
 }
 
 #picture {
-	padding-left: 20%;
 	display: inline-block;
+	margin: auto;
+	float: left;
+	width: 50%	
+}
+
+#aboutme {
+width: 33%;
+margin: auto;
+float: left;
+}
+
+#professional {
+display: inline-block;
+width: 33%;
+margin: auto;
+}
+
+#programming {
+display: inline-block;
+width: 33%;
+margin: auto;
 }
 
 table, th, td {
