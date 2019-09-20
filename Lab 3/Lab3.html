@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
 	<title>Lab 3</title>
+	<meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="lab3.css">
 </head>
 <body>
@@ -19,10 +20,11 @@
 		<a href="#schedules">Schedules</a>
 	</nav>
 
-<div id="picture">
-	<img src="https://i2.wp.com/oshawaexpress.ca/wp/wp-content/uploads/2016/08/uoit_expansion.jpg?resize=1200%2C675">
-</div>
-<div id="contacts">
+<div class="row">
+	<div id="picture" class="column middle">
+		<img src="https://i2.wp.com/oshawaexpress.ca/wp/wp-content/uploads/2016/08/uoit_expansion.jpg?resize=1200%2C675">
+	</div>
+<div id="contacts" class="column middle">
 	<p>Faseeh Ahmed</p>
 	<p>Faculty of Business and IT</p>
 	<a href="https://ontariotechu.ca/">Ontario Technology University</a>
@@ -31,16 +33,25 @@
 	<p>416-824-1236</p>
 	<a href="https://www.linkedin.com/in/faseeh98/">LinkedIn Profile</a>
 </div>
+</div>
 
-
-<div id="aboutme">
+<div class="row">
+	<div id="aboutme" class="column side">
 	<h4>About Me</h4>
 	<p>  I am a third year IT Management student with a passion for all topics related to the advancements in technology, its effects on our lives and its applications in the business world. I enjoy finding innovative avenues for businesses to efficiently improve their processes and have a passion for data science and its vast applications.
 	</p>
+	</div>
+
+<div id="professional" class="column middle">
+	<h4>Techinical and Professional Skills</h4>
+<ol>
+	<li><strong>Leadership:</strong> I took a course called collaborative leadership</li>
+	<li><strong>Data Visualization:</strong> I have worked with softwares such as Tableau and Microsoft Power BI</li>
+	<li><strong>Microsoft Excel: </strong>I can create nice charts, graphs and visuals. This is also complemented with my VBA knowledge</li>
+</ol>
 </div>
 
-
-<div id="programming" class="container">
+<div id="programming" class="column side">
 	<h4>Programming Skills</h4>
 <ul>
 	<li>Python</li>
@@ -59,14 +70,6 @@
 	<li>VBA</li>
 </ul>
 </div>
-
-<div id="professional">
-	<h4>Techinical and Professional Skills</h4>
-<ol>
-	<li><strong>Leadership:</strong> I took a course called collaborative leadership</li>
-	<li><strong>Data Visualization:</strong> I have worked with softwares such as Tableau and Microsoft Power BI</li>
-	<li><strong>Microsoft Excel: </strong>I can create nice charts, graphs and visuals. This is also complemented with my VBA knowledge</li>
-</ol>
 </div>
 
 <div id="schedules">
@@ -116,6 +119,6 @@
 </table>
 </div>
 
-<footer>Designed by me @ 2019</footer>
+<footer>Designed by me @ 2019 &copy;</footer>
 </body>
 </html>
