@@ -81,8 +81,6 @@ tr:hover {
 	.column.side, .column.middle {width: 100%}
 }
 
-
-
 table, th, td {
 	border: 1px solid black;
 	border-collapse: collapse;
