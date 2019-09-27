@@ -22,6 +22,10 @@ form {
 	font-size: 16pt;
 }
 
+#update_button:hover {
+	opacity: 0.5;
+}
+
 #aboutme_box {
 	height: 200px;
 }
