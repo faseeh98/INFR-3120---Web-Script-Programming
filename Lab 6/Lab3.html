@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="myJS">
+<head>
+	<title>Lab 3</title>
+	<meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="lab3.css">
+	<script type="text/javascript" src="app/lib/angular.min.js"></script>
+	<script type="text/javascript" src="app/app.js"></script>
+</head>
+<body ng-controller="myController">
+	<header>
+		<div id="headline">
+			<h1>Faseeh's Webpage</h1>
+		</div>
+	</header>
+
+	<nav>
+		<a href="#contacts">Contacts</a>
+		<a href="#aboutme">About Me</a>
+		<a href="#programming">Programming</a>
+		<a href="#professional">Professional</a>
+		<a href="#schedules">Schedules</a>
+	</nav>
+
+<div class="row">
+	<div id="picture" class="column side">
+		<img src=uoitlogo.png>
+	</div>
+<div id="contacts" class="column middle">
+	<p>{{data.name}}</p>
+	<p>Faculty of Business and IT</p>
+	<a href="https://ontariotechu.ca/">Ontario Technology University</a>
+	<p>IT Management</p>
+	<p>faseeh.ahmed@ontariotechu.ca</p>
+	<p>416-824-1236</p>
+	<a href="https://www.linkedin.com/in/faseeh98/">LinkedIn Profile</a>
+</div>
+</div>
+
+<div class="row">
+	<div id="aboutme" class="column side">
+	<h4>About Me</h4>
+	<p>  I am a third year IT Management student with a passion for all topics related to the advancements in technology, its effects on our lives and its applications in the business world. I enjoy finding innovative avenues for businesses to efficiently improve their processes and have a passion for data science and its vast applications.
+	</p>
+	</div>
+
+<div id="professional" class="column middle">
+	<h4>Techinical and Professional Skills</h4>
+<ol>
+	<li><strong>Leadership:</strong> I took a course called collaborative leadership</li>
+	<li><strong>Data Visualization:</strong> I have worked with softwares such as Tableau and Microsoft Power BI</li>
+	<li><strong>Microsoft Excel: </strong>I can create nice charts, graphs and visuals. This is also complemented with my VBA knowledge</li>
+</ol>
+</div>
+
+<div id="programming" class="column side">
+	<h4>Programming Skills</h4>
+<ul>
+	<li>Python</li>
+	<li>SQL</li>
+	<li>HTML5</li>
+	<li>CSS3</li>
+	<li>Javascript</li>
+	<li>Angular.JS</li>
+	<li>Node.JS</li>
+	<li>Express.JS</li>
+	<li>Ajax</li>
+	<li>PHP</li>
+	<li>jQuery</li>
+	<li>Bootsrap 4</li>
+	<li>Git</li>
+	<li>VBA</li>
+</ul>
+</div>
+</div>
+
+<div id="schedules">
+	<h4>Course Schedule</h4>
+<table>
+<tr>
+	<th id="TableBorder" align="center">Course Name</th>
+	<th id="TableBorder" align="center">Course Number</th>
+	<th id="TableBorder" align="center">Days and Time</th>
+	<th id="TableBorder" align="center">Instructor</th>
+</tr>
+<tr>
+	<td id="TableBorder" align="center" rowspan="2">Web Programing</td>
+	<td id="TableBorder" align="center" rowspan="2">INFR 3120</td>
+	<td id="TableBorder" align="center">Monday 2:10-3:30</td>
+	<td id="TableBorder" align="center" rowspan="2">Amirali Abari</td>
+</tr>
+<tr><td id="TableBorder" align="center">Wedneday 2:10-3:30</td></tr>
+<tr>
+	<td id="TableBorder" align="center" rowspan="2">Intro to financial Acccounting</td>
+	<td id="TableBorder" align="center" rowspan="2">INFR 1130</td>
+	<td id="TableBorder" align="center">Monday 2:10PM-3:30PM</td>
+	<td id="TableBorder" align="center" rowspan="2">Bic Ngo</td>
+</tr>
+<tr><td id="TableBorder" align="center">Tuesday 11:10-12:30</td></tr>
+<tr>
+	<td id="TableBorder" align="center" rowspan="2">Business Simulation and Analytics</td>
+	<td id="TableBorder" align="center" rowspan="2">BUSI 2500</td>
+	<td id="TableBorder" align="center">Monday 6:40PM-9:30PM</td>
+	<td id="TableBorder" align="center" rowspan="2">Michael Bliemel</td>
+</tr>
+<tr><td id="TableBorder" align="center">Wedneday 2:10-3:30</td></tr>
+<tr>
+	<td id="TableBorder" align="center" rowspan="2">Introduction to Cloud Services</td>
+	<td id="TableBorder" align="center" rowspan="2">INFR 2670</td>
+	<td id="TableBorder" align="center">Monday 2:10-3:30PM</td>
+	<td id="TableBorder" align="center" rowspan="2">Richard W. Pazzi</td>
+</tr>
+<tr><td id="TableBorder" align="center">Thursday 2:10PM-3:30PM</td></tr>
+<tr>
+	<td id="TableBorder" align="center" rowspan="2">Introduction to Computer Security</td>
+	<td id="TableBorder" align="center" rowspan="2">INFR 2600</td>
+	<td id="TableBorder" align="center">Tuesday 8:10PM-9:30PM</td>
+	<td id="TableBorder" align="center" rowspan="2">Brent MacRae</td>
+</tr>
+<tr><td id="TableBorder" align="center">Thursday 8:10PM-9:30PM</td></tr>
+</table>
+</div>
+
+<footer>Designed by me @ 2019 &copy;</footer>
+</body>
+</html>

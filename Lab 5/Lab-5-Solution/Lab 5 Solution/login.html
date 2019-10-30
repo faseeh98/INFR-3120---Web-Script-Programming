@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mycss.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.js"></script>
+<head>
+<body>
+<div class="header">Login Form</div>
+<form id="login" action="/action_page.php">
+    <label><b>Username</b></label><br>
+    <input type="text" placeholder="Enter your Username" name="uname" required>
+    <br>
+    <label><b>Password</b></label><br>
+    <input type="password" placeholder="Enter your Password" name="psw" required>
+    <br>
+    <button type="submit">Login</button>
+    <br>
+    <input type="checkbox" name="remeber" checked="checked"> Remember me
+</form>
+<script>
+$(document).ready(function () {
+  $('#login').validate({ // initialize the plugin
+      rules: {
+          uname: {
+              required: true,
+              minlength: 5
+          },
+          psw: {
+              required: true
+          }
+      },
+      messages: {
+            uname: {
+              required: "Please enter your username."
+            },
+            psw: {
+              required: "Please enter your password."
+            }
+      }
+      });
+});
+</script>
+</body>
+</html>

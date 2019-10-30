@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mycss.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.js"></script>
+<head>
+<body>
+<div class="header">Admin Page</div>
+<form id ="myform" action="/action_page.php">
+    <b>Name</b><br>
+    <input type="text" name="name" placeholder="enter your name" value=""><br>
+    <b>Phone number</b><br>
+    <input type="text" name="phone" placeholder="Phone Number" value=""><br>
+    <label><b>Email Address</b></label><br>
+    <input type="text" name="email" placeholder="email address" value=""><br>
+    <b>About me</b><br>
+    <textarea placeholder="Write your bio here" name="about" rows="10" cols="70"></textarea>
+    <br>
+    <b>Image File</b><br>
+    <input type="file" name="imagefile" size="60"><br>
+    <button type="submit">Update</button>
+</form>
+<script>
+$(document).ready(function () {
+  $('#myform').validate({ // initialize the plugin
+      rules: {
+          name: {
+              required: true,
+              minlength: 5
+          },
+          email: {
+              required: true,
+              email: true
+          },
+          phone: {
+            required: true,
+            phoneUS: true
+          },
+          about: {
+            minlength : 20
+          }
+      },
+      messages: {
+            name: {
+              required: "Please enter your first and last name."
+            }
+      }
+      });
+});
+</script>
+</body>
+</html>
